@@ -40,16 +40,20 @@ int main()
     {
 
         if(c==0)
-            addend=7*Y[i];
+            addend=Y[i];
         else if(c==1)
-            addend=32*Y[i];
+            addend=5*Y[i];
         else if(c==2)
-            addend=12*Y[i];
+            addend=Y[i];
         else if(c==3)
-            addend=32*Y[i];
+            addend=6*Y[i];
+        else if(c==4)
+            addend=Y[i];
+        else if(c==5)
+            addend=5*Y[i];
         else
         {
-            addend=7*Y[i];
+            addend=Y[i];
             c=-1;
             if(i!=12)
                 i--;
@@ -59,7 +63,7 @@ int main()
 
     }
 
-    float integ=((2*ss)/45)*sum;
+    float integ=((3*ss)/10)*sum;
     printf("\nIntegration is %f",integ);
     return 1;
 }
