@@ -15,15 +15,11 @@ int main()
     {
         scanf("%f",&X[i]);
         scanf("%f",&Y[i]);
-    }
-
-    for(int i=0;i<n;i++)
-    {
         sumx+=X[i];
         sumy+=Y[i];
         sumx2+=pow(X[i],2);
         sumxy+=X[i]*Y[i];
-    }
+    }//simultaneous storge and addition of the data
 
     m=((n*sumxy)-(sumx*sumy))/((n*sumx2)-pow(sumx,2));
 
