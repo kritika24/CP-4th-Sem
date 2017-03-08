@@ -2,44 +2,25 @@
 #include <stdio.h>
 int main() {
         float a,b,c;
-        printf("Enter the three Numbers\n");
+        printf("Enter the three Numbers (with space)\n");
         scanf("%f %f %f",&a,&b,&c);
-
-
         printf("\n");
-        if (a>b)
+        if (a==b && a==c)
         {
-                if (a>c)
-                {
-                        printf("%f is the largest\n",a);
-                }
-                else
-                {
-                        printf("%f is the largest\n",c);
-                }
-        }
-        else if(b>a)
-        {
-                if (b>c)
-                {
-                        printf("%f is the largest\n",b);
-                }
-                else
-                {
-                        printf("%f is the largest\n",c);
-                }
-        }
-        else
-        {
-            if(a>c)
-            {
                 printf("%f is the largest\n",a);
-            }
-            else
-            {
-                printf("%f is the largest\n",c);
-            }
         }
-
-        return 0;
+        if (a>b && a>c)
+        {
+                printf("%f is the largest\n",a);
+        }
+        else if(b>c)
+        {
+                        printf("%f is the largest\n",b);
+        }
+       else
+         {
+                        printf("%f is the largest\n",c);
+         }
+        
+             return 0;
 }
